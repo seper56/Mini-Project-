@@ -23,10 +23,8 @@ document.addEventListener('mousemove' ,(e) => {
     const y = e.pageY
     console.log(x, y)
     const buttonBox = button.getBoundingClientRect()
-    const hotizontalDistanacfrom = distancefromceneter(button.x, x, 
-    buttonBox.width) 
-    const verticalDistanacfrom = distancefromceneter(button.x, x, 
-        buttonBox.height)
+    const hotizontalDistanacfrom = disstanceFromCenter(button.x, x, buttonBox.width) 
+    const verticalDistanacfrom = disstanceFromCenter(button.x, x, buttonBox.height)
     const hotizontaloffset = buttonBox.width / 2 + OFFSET
     const verticaloffset = buttonBox.height / 2 + OFFSET
     if (Math.abs(hotizontalDistanacfrom) <= hotizontaloffset && Math.abs (verticalDistanacfrom) <= (verticaloffset)) {
