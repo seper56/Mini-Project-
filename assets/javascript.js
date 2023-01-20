@@ -9,17 +9,17 @@ document.addEventListener("mousemove", (e) => {
 });
 
 setInterval(() => {
-  const buttonRect = noButton.getBoundingClientRect();
-  const buttonX = buttonRect.left + buttonRect.width / 2;
-  const buttonY = buttonRect.top + buttonRect.height / 2;
-
-  const distanceX = mouseX - buttonX;
-  const distanceY = mouseY - buttonY;
-
-  noButton.style.left = distanceX / 20 + "px";
-  noButton.style.top = distanceY / 20 + "px";
-}, 20);
-
+    const buttonRect = noButton.getBoundingClientRect();
+    const buttonX = buttonRect.left + buttonRect.width / 2;
+    const buttonY = buttonRect.top + buttonRect.height / 2;
+  
+    const distanceX = buttonX - mouseX;
+    const distanceY = buttonY - mouseY;
+  
+    noButton.style.left = distanceX / 20 + "px";
+    noButton.style.top = distanceY / 20 + "px";
+  }, 20);
+  
 
 // const button = document.getElementById('button')
 // const OFFSET = 100
