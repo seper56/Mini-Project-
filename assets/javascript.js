@@ -1,13 +1,4 @@
 // JavaScript to handle button movement
-const noButton = document.getElementById("no-button");
-let mouseX;
-let mouseY;
-
-document.addEventListener("mousemove", (e) => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
-
 setInterval(() => {
     const buttonRect = noButton.getBoundingClientRect();
     const buttonX = buttonRect.left + buttonRect.width / 2;
