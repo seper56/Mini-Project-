@@ -1,4 +1,22 @@
-body {
+#ask-container {
+    text-align: center;
+  }
+  
+  #yes-no-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #no-button {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+  }
+  
+
+
+
+
+/* body {
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -10,6 +28,6 @@ body {
     position: absolute;
     white-space: nowrap;
     font-size: 2rem;
-    
 
-}
+
+} */
