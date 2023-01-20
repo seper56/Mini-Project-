@@ -1,3 +1,10 @@
+
+var myfunction = function(){
+    var myVar = "button";
+};
+
+console.log(myVar);
+
 $(function(){
     $("button").on({
         mouseover:function(){
