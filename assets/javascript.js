@@ -44,8 +44,17 @@ function setButtonPosition(top, left) {
     const windowBox = document.body.getBoundingClientRect()
     const buttonBox = button.getBoundingClientRect()
 
-    if(disstanceFromCenter(left, windowBox.left, buttonBox.height) < 0) {
+    if(disstanceFromCenter(left, windowBox.left, buttonBox.width) < 0) {
         left = windowBox.right - button.width - OFFSET
+    }
+    if(disstanceFromCenter(left, windowBox.right, buttonBox.width) < 0) {
+        left = windowBox.left + OFFSET
+    }
+    if(disstanceFromCenter(top, windowBox.right, buttonBox.height) < 0) {
+        top = windowBox.bottom - buttonBox.height - OFFSET
+    }
+    if(disstanceFromCenter(top, windowBox.bottom, buttonBox.height) > 0) {
+        top = windowBox.top + OFFSET
     }
 
     button.style.top  = '${top}px'
